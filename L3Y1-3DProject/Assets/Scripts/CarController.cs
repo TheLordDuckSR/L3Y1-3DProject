@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
+    
+
 
     private Rigidbody theRB; // this is the RigidBody that control everything. Do not touch.
 
@@ -38,6 +40,7 @@ public class CarController : MonoBehaviour
 
     void Start()
     {
+       
         theRB = gameObject.GetComponentInChildren<Rigidbody>(); //grabs the Rigidbody in the Sphere that is a child of the main gameObject.
         theRB.transform.parent = null; //moves the sphere out of the parent into the root. 
         groundRayPoint = GameObject.Find("ray point").transform; // finds the raycast point for grounded.
@@ -123,5 +126,5 @@ public class CarController : MonoBehaviour
         }
 
     }
-
+  
 }
