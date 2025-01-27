@@ -27,7 +27,20 @@ public TMP_Text collectablesText;
     {
         Collectables();
 
-        timerText.text = timer.ToString("F2");
+     if (Input.GetKeyDown(KeyCode.R))
+     {
+         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+     }
+     
+        
+        
+
+        
+    }
+    
+    void GameTimer()
+    {
+       timerText.text = timer.ToString("F2");
 
         if (timer <= 0)
         {
@@ -39,7 +52,12 @@ public TMP_Text collectablesText;
         timer -= Time.deltaTime;
     }
     }
-    
+
+
+
+
+
+
     void Collectables()
     {
         collectablesText.text = currentCollectables + " / " + requiredCollectables;
