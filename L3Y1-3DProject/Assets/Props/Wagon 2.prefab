@@ -61,7 +61,7 @@ PrefabInstance:
     - target: {fileID: 2158060710743880619, guid: a57b37f75ab209b43aff251611b91e21,
         type: 3}
       propertyPath: m_Name
-      value: Wagon 1 Variant
+      value: Wagon 2
       objectReference: {fileID: 0}
     - target: {fileID: 7406678675463551130, guid: a57b37f75ab209b43aff251611b91e21,
         type: 3}
